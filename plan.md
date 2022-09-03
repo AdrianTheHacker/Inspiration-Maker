@@ -12,7 +12,7 @@ This project is mainly just to learn how pillow (a python library used for image
 ### Core functionality
 
 - Grab quotes from https://programming-quotes-api.herokuapp.com/index.html
-- Grab images from https://www.pexels.com/api/
+- Grab images from https://unsplash.com
 - Add the quote onto the image
 
 ### Tools
