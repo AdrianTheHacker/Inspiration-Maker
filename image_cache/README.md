@@ -1,0 +1,1 @@
+This is where all the images will go before text is added to them.

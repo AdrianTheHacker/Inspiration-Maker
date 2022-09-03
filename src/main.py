@@ -1,12 +1,9 @@
-from quotes import get_quote
+from images import get_image
 
 
 def main():
-    quote = get_quote()
+    get_image()
     
-    print(quote.message)
-    print(quote.author)
-
 
 if __name__ == "__main__":
     main()
