@@ -1,4 +1,5 @@
 # Module used to grab quotes
+
 from dataclasses import dataclass
 import requests
 
@@ -22,7 +23,7 @@ MAX_RANGE = 100 # When grabbing a quote, the API returns a list of quotes.
                 # An alternative could be to choose a random number of quotes, and always 
                 # grab the last one. This way when grabbing quotes such as the first, second
                 # or third one, you don't have to load 50+ quotes.
-                
+
 
 def get_quote(max_range=MAX_RANGE) -> Quote:
     """
