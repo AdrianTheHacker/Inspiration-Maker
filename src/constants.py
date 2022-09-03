@@ -1,1 +1,2 @@
-image_cache_path="image_cache\image.jpg"
+IMAGE_PATH="image\image.jpg"
+POSTER_PATH="posters\poster.jpg"

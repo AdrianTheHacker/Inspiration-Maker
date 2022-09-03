@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 from os import getenv, remove
 
-import constants
+from constants import IMAGE_PATH
 
 
 load_dotenv()
@@ -15,7 +15,7 @@ def __clear_image_cache():
     Clears image cache to prevent issues with file writing.
     """
     try:
-        remove(constants.image_cache_path)
+        remove(IMAGE_PATH)
 
     except FileNotFoundError:
         pass # You can't delete a file that doesn't exist
@@ -34,5 +34,5 @@ def get_image():
     # Converts the image link into bytes.
     # Writes the bytes to the image file.
     image_data = requests.get(regular_image_link).content
-    with open(constants.image_cache_path, 'wb') as handler:
+    with open(IMAGE_PATH, 'wb') as handler:
         handler.write(image_data)
